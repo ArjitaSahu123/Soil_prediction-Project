@@ -26,16 +26,16 @@ This multi-layered architecture ensures a more accurate, scalable, and actionabl
 
 ## 🗂️ Project Structure
 
-├── app.py # Main Flask application
-├── soil_predict.ipynb # Jupyter notebook with model training and testing
-├── Crop_recommendationV2.csv # Dataset used for training
-├── model.pkl # ML model for crop recommendation
-├── neural_model.h5 # Neural network for soil health prediction
-├── scaler.pkl # Scaler used to normalize input data
-├── label_encoder.pkl # Label encoder for categorical features
-├── templates/ # HTML templates for frontend
-├── static/ # Static files (CSS, JS)
-└── README.md # Project documentation
+- ├── app.py # Main Flask application
+- ├── soil_predict.ipynb # Jupyter notebook with model training and testing
+- ├── Crop_recommendationV2.csv # Dataset used for training
+- ├── model.pkl # ML model for crop recommendation
+- ├── neural_model.h5 # Neural network for soil health prediction
+- ├── scaler.pkl # Scaler used to normalize input data
+- ├── label_encoder.pkl # Label encoder for categorical features
+- ├── templates/ # HTML templates for frontend
+- ├── static/ # Static files (CSS, JS)
+- └── README.md # Project documentation
 
 ## 🧪 Technologies Used
 
@@ -91,12 +91,17 @@ python app.py
 ### Work flow
 ![Screenshot 2024-11-04 143649](https://github.com/user-attachments/assets/145764c3-9986-4d5e-b81b-805bc8c892bb)
 
- ###📷 Screenshots
+
+ ### 📷 Screenshots
+ 
 ![Screenshot 2024-12-08 152300](https://github.com/user-attachments/assets/ea9822bf-c03e-44aa-9f3d-783af1851ab8)
 
- ![Screenshot 2024-12-08 152334](https://github.com/user-attachments/assets/9a00d793-3ed9-4140-b2b7-9cb7b81ea4b5)
 
+ ![Screenshot 2024-12-08 152334](https://github.com/user-attachments/assets/9a00d793-3ed9-4140-b2b7-9cb7b81ea4b5)
+ 
+### Output
 ![Screenshot 2024-12-08 152357](https://github.com/user-attachments/assets/40fc31da-6b3d-42fa-909a-5849d55739c7)
+
 
 ![Screenshot 2024-12-08 152415](https://github.com/user-attachments/assets/8b1b577d-92e2-4edd-8a54-a87bf9fc7baf)
 
@@ -107,7 +112,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 👩‍💻 Author
-Arjita Sahu
-📧 Contact: [arjitasahu.2020@gmail.com]
-🔗 GitHub: ArjitaSahu123
+- Arjita Sahu
+- 📧 Contact: [arjitasahu.2020@gmail.com]
+- 🔗 GitHub: ArjitaSahu123
 
