@@ -1,41 +1,91 @@
 # 🌱 Soil Adjustment Prediction System
 
-A Machine Learning-based web application that analyzes soil parameters and recommends suitable crops for cultivation, along with adjustment suggestions for improved soil health.
+A smart dashboard-enabled machine learning system for analyzing real-time and manual soil parameters and suggesting optimal nutrient adjustments, fertilizer recommendations, and crop-growing strategies.
+
+---
 
 ## 📌 Features
 
-- 🌾 **Crop Recommendation**: Suggests the most suitable crop based on soil parameters.
-- 🔬 **Soil Health Prediction**: Uses a neural network to predict soil health categories.
-- 📊 **Data Normalization & Encoding**: Preprocessing includes label encoding and feature scaling.
-- 🌐 **Web Interface**: User-friendly UI built using Flask templates.
-- 🧠 **Pre-trained Models**:
-  - `model.pkl`: Traditional ML model for crop recommendation.
-  - `neural_model.h5`: Neural network model for soil health prediction.
+- 🌾 **Crop Label Prediction**: Encodes crop labels from user input.
+- 🧪 **Soil Parameter Input**: Allows manual input from farmers or automated input from IoT devices.
+- 🌐 **Web Dashboard UI**: Interactive, dashboard-like structure with quick access to multiple tools.
+- 📊 **Adjustment Predictions**: Outputs required corrections for N, P, K, pH, temperature, humidity, and rainfall.
+- 💊 **Fertilizer Recommendations**: Calculates Urea, DAP, MOP doses based on predicted soil deficiencies.
+- 📅 **Modular Dashboard Tabs**:
+  - 📉 Soil Moisture Comparison (Graph)
+  - 🌦️ Weather Forecasts for Sowing
+  - 📈 Yield Analysis: Actual vs Predicted
+  - 💰 Crop Revenue Timing Suggestion
+  - 🔗 Task Management: Connects to nearby farmers
 
-## 🆚 What Makes This Model Unique?
+---
 
-Unlike many basic models that only recommend crops based on basic nutrient values (N, P, K), this project incorporates:
+## 💡 What's Unique?
 
-- ✅ **Multi-Model Approach**: Combines both classical ML (RandomForest, DecisionTree, etc.) and deep learning (Neural Networks) for more robust predictions.
-- ✅ **Dual Functionality**: Not just crop recommendation, but also soil *adjustment advice* via classification of soil health.
-- ✅ **Feature-Rich Input**: Utilizes real-world parameters like humidity, temperature, pH, and rainfall to ensure location-aware and seasonally accurate suggestions.
-- ✅ **Custom Preprocessing Pipelines**: Includes saved `scaler.pkl` and `label_encoder.pkl` to replicate training environment in production.
-- ✅ **Optimized for Deployment**: Models are lightweight and fast, making them suitable for real-time applications in web or mobile environments.
+- ✅ **IoT-Compatible**: Built to fetch sensor data in future updates.
+- ✅ **Manually Usable**: Works seamlessly with or without sensor devices.
+- ✅ **Real-time Scaling**: Supports scrollable and modular UI for large data sets.
+- ✅ **Enhanced UI**: Clean, dark-themed input + bright recommendation layout.
+- ✅ **Fertilizer Logic**: Based on predicted adjustments from ML model.
 
-This multi-layered architecture ensures a more accurate, scalable, and actionable decision-making system compared to traditional, single-purpose models.
+---
 
-## 🗂️ Project Structure
+## 🧠 Technologies Used
 
-- ├── app.py # Main Flask application
-- ├── soil_predict.ipynb # Jupyter notebook with model training and testing
-- ├── Crop_recommendationV2.csv # Dataset used for training
-- ├── model.pkl # ML model for crop recommendation
-- ├── neural_model.h5 # Neural network for soil health prediction
-- ├── scaler.pkl # Scaler used to normalize input data
-- ├── label_encoder.pkl # Label encoder for categorical features
-- ├── templates/ # HTML templates for frontend
-- ├── static/ # Static files (CSS, JS)
-- └── README.md # Project documentation
+- Python
+- Flask
+- Pandas, NumPy
+- Scikit-learn
+- HTML, CSS 
+- Bootstrap/Grid for layout
+- Jupyter Notebook (model training)
+
+---
+
+## 📁 Project Structure
+
+```
+├── app.py                        # Flask backend for UI
+├── model.pkl                    # ML model for adjustment prediction
+├── scaler.pkl                   # Trained standard scaler
+├── label_encoder.pkl            # Crop label encoder
+├── Crop_recommendationV2.csv   # Dataset used
+├── templates/
+│   └── index.html               # UI Dashboard Page
+├── static/
+│   ├── style.css
+│   └── weeding.jpeg             # Background image
+├── README.md
+```
+
+---
+
+## 🔢 Features Supported
+
+| Section              | Functionality                                                                 |
+|----------------------|------------------------------------------------------------------------------|
+| Dashboard (Default)  | Main form + predictions                                                      |
+| Weather              | Shows best growing season info                                               |
+| Soil Moisture        | Shows line graph comparing moisture vs needed moisture                      |
+| Crop Yield           | Displays actual/predicted yield ratio                                        |
+| Farm Revenue         | Shows peak time for selling the crop                                         |
+| Task Management      | Shows nearby farmers & allows contact for best selling strategy              |
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+git clone https://github.com/ArjitaSahu123/Soil_prediction-Project.git
+cd Soil_prediction-Project
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
+Visit: `http://127.0.0.1:5000`
+
+---
 
 ## 🧪 Technologies Used
 
