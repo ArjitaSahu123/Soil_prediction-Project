@@ -34,7 +34,7 @@ A smart dashboard-enabled machine learning system for analyzing real-time and ma
 
 - Python
 - Flask
-- Pandas, NumPy
+- Pandas, NumPy, Matplotlib
 - Scikit-learn
 - HTML, CSS 
 - Bootstrap/Grid for layout
@@ -83,19 +83,32 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
-Visit: `http://127.0.0.1:5000`
+Visit: `https://soil-adjustment-prediction-production.up.railway.app/`
 
 ---
 
 ## 🧪 Technologies Used
 
-- Python
-- Flask
-- Pandas, NumPy
-- Scikit-learn
-- TensorFlow / Keras
-- HTML/CSS (for frontend)
-- Jupyter Notebook
+🧠 Machine Learning & Data
+1. Scikit-learn
+2. TensorFlow / Keras
+3. Pandas
+4. NumPy
+5. Matplotlib
+6. Joblib
+
+🌐 Backend
+1. Flask
+   
+🎨 Frontend
+1. HTML
+2. CSS
+
+🛠 Tools
+
+1. Jupyter Notebook
+2. Git
+3. GitHub
 
 ## 📊 Dataset
 
@@ -136,7 +149,7 @@ pip install flask pandas numpy scikit-learn tensorflow
  ``` bash
 python app.py
 ```
-###  The app will be available at http://127.0.0.1:5000/.
+###  The app will be available at https://soil-adjustment-prediction-production.up.railway.app/.
 
 ### Work flow
 ![Screenshot 2024-11-04 143649](https://github.com/user-attachments/assets/145764c3-9986-4d5e-b81b-805bc8c892bb)
